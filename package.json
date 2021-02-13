@@ -1,6 +1,6 @@
 {
   "name": "@discord-rose/admin-middleware",
-  "version": "1.0.2",
+  "version": "1.1.0",
   "description": "Admin middleware for Discord-Rose",
   "main": "index.js",
   "scripts": {
@@ -19,5 +19,5 @@
   ],
   "author": "JPBBerry",
   "license": "ISC",
-  "typings": "./index.d.ts"
+  "types": "./types.d.ts"
 }
