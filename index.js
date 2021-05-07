@@ -7,7 +7,8 @@ module.exports = (idOrFunction, message = 'You need to be admin to use this comm
 
   return async (ctx) => {
     if (ctx.command.admin) {
-      if (!await fn(ctx.message.author.id)) throw new Error(message)
+      if (!await fn(ctx.message.author.id)) ctx.error(message)
+      return false
     }
 
     return true
